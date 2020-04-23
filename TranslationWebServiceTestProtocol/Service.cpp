@@ -137,7 +137,6 @@ std::string Service::GetLanguageCode(std::string user_input)
 	// Checks if the user input either matches a code or a language, and returns the code.
 	if (this->codeToLang.find(user_input) != this->codeToLang.end())
 	{
-
 		language_code = user_input;
 	}
 	else if (this->langToCode.find(user_input) != this->langToCode.end())

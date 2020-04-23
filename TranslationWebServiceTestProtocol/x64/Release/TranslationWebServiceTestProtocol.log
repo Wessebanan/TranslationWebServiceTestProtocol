@@ -1,7 +1,9 @@
-﻿  TranslationWebServiceTestProtocol.cpp
+﻿  Service.cpp
+C:\Users\Wesse\Source\Repos\TranslationWebServiceTestProtocol\TranslationWebServiceTestProtocol\Service.cpp(117,71): warning C4267: 'initializing': conversion from 'size_t' to 'uint8_t', possible loss of data
+  TranslationWebServiceTestProtocol.cpp
   Generating code
-  0 of 505 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  2 of 505 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   TranslationWebServiceTestProtocol.vcxproj -> C:\Users\Wesse\Source\Repos\TranslationWebServiceTestProtocol\x64\Release\TranslationWebServiceTestProtocol.exe
