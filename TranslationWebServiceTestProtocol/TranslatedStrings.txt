@@ -1,15 +1,11 @@
-en
-test
-hello
 sv
-greeting
-hej
+test
+hellote
+test
+hej hej
 asd
 test
-
-en
-testspaces
-hello world
-en
-buy-chips
-Buy Chips
+hey
+asd
+test2
+heje

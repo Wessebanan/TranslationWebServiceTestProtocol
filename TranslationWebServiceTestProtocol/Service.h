@@ -10,11 +10,17 @@
 class Service
 {
 private:
+	// Mapping of language codes to mapping of (key, translation) pairs.
 	std::unordered_map<std::string, std::unordered_map<std::string, std::string>> translatedStrings;
+
+	// Mappings of language codes to plain text languages and vice versa.
 	std::unordered_map<std::string, std::string> codeToLang;
 	std::unordered_map<std::string, std::string> langToCode;
 
+	// Reads language codes from IANA.txt and stores them.
 	void ReadIANA();
+
+	// Reads prior entries.
 	void ReadExisitingStrings();
 
 public:
@@ -33,10 +39,11 @@ public:
 	// Remove an existing entry in the 'database'.
 	bool Remove(const std::string& lang_code, const std::string& key);
 
+	// Check if the given language matches either a language code or a language.
 	bool LanguageExists(std::string user_input);
+
+	// Get a language code from the user input, returns an empty string if it does not match.
 	std::string GetLanguageCode(std::string user_input);
-
-
 };
 
 #endif // SERVICE
