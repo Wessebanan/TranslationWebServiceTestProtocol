@@ -41,6 +41,7 @@ public:
 
 	void setup()
 	{
+		addRoute("GET", "/hello", MyController, hello);
 		addRoute("POST", "/add", MyController, add);
 		addRoute("GET", "/get", MyController, get);
 		addRoute("PUT", "/modify", MyController, modify);
