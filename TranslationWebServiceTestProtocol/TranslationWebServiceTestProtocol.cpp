@@ -13,7 +13,27 @@ using namespace Mongoose;
 
 class MyController : public WebController
 {
+private:
+	Service service;
+
 public:
+	void add(Request& request, StreamResponse& response)
+	{
+
+	}
+	void get(Request& request, StreamResponse& response)
+	{
+
+	}
+	void modify(Request& request, StreamResponse& response)
+	{
+
+	}
+	void remove(Request& request, StreamResponse& response)
+	{
+
+	}
+
 	void hello(Request& request, StreamResponse& response)
 	{
 		response << "Hello " << htmlEntities(request.get("name", "... what's your name ?")) << endl;
@@ -21,7 +41,10 @@ public:
 
 	void setup()
 	{
-		addRoute("GET", "/hello", MyController, hello);
+		addRoute("POST", "/add", MyController, add);
+		addRoute("GET", "/get", MyController, get);
+		addRoute("PUT", "/modify", MyController, modify);
+		addRoute("DELETE", "/remove", MyController, remove);
 	}
 };
 
