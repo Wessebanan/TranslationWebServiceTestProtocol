@@ -1,0 +1,15 @@
+en
+test
+hello
+sv
+greeting
+hej
+asd
+test
+
+en
+testspaces
+hello world
+en
+buy-chips
+Buy Chips
